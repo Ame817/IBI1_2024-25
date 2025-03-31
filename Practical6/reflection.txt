@@ -1,0 +1,8 @@
+This practical is relatively challenging compared with previous ones.
+Initially I felt that I have no idea about how to fulfill the required functions of my program. 
+However, after set up the primary variables following the guidence, I soon get the ideas of how to do the next steps.
+Besides, it's a bit challenging to deal with the errors of my programs.
+When coding the spatial SIR program, the initial method I use was to iterate all points to find whose Manhattan distance to infected people is =< 2.
+But this induced so many times of loops that the program takes more than 20 minutes to run.
+So I switch to another method, which significantly reduced the number of loops.
+Overall I think this is an interesting trial of programing. I like that.
