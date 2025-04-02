@@ -1,0 +1,15 @@
+import re
+openfile=open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r')
+input_0=openfile.read()
+input=re.sub('\n','',input_0)
+tata_gene=re.findall(r'>[^>]+?TATA[AT]A[AT][ATCG]*',input)
+output=open('tata_genes.fa','w')
+for i in range(0,len(tata_gene)):
+    gene=str(tata_gene[i])
+    sequence=re.findall(r']([ATCG]+)',gene)
+    gene_name=re.findall(r'>(\S+?)[\s_]',gene)
+    output.write(str(gene_name[0]))
+    output.write('\n')
+    output.write(str(sequence[0]))
+    output.write('\n')
+output.close()
