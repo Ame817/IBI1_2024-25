@@ -1,3 +1,0 @@
-During this course, I have learnt version control, navigating unix-like systems and how to use github to do some simple projects.
-
-
