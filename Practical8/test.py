@@ -11,11 +11,11 @@ def enzyme_cut(DNA_sequence,recognised_sequence):
             return('Sorry,the recognized sequence is not found in the DNA sequence.')
         else:
             position_list=[]
-            for i in range(0,len(DNA_sequence)-len(recognised_sequence)+2):
-                if DNA_sequence[i:i+len(recognised_sequence)]==recognised_sequence:
-                    position_list.append(i+1)
+            for i in (0,len(sequence)):
+                where=str(sequence[i])
+                position=len(where)-len(recognised_sequence)+1
+                position_list.append(position)
             return(position_list)
 
-
-position_result=enzyme_cut('AGGTGGAATTCCGCGGGCCCGGGTAGCGTAGAATTC','GAATTC')
-print('The position(s) of recognised sequence is',position_result)
+position_result=enzyme_cut('AGGTGGAATTCCGCGGGCCCGGGTAGCGTA','GAATTC')
+print(position_result)
