@@ -1,0 +1,10 @@
+What country or countries have recorded a DALYs greater than 650,000 in a single year?
+line 34-37
+
+Result:
+Rwanda have recorded a DALYs greater than 650,000 in a single year (in 1994).
+
+Discuss:
+Rwanda experienced a genocide in 1994,
+and the turmoil along with a large number of corrupt corpses could lead to severe plague transmission,
+resulting in a sharp increase in DALYs.
