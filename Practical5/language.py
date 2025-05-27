@@ -13,4 +13,6 @@ import numpy as np
 x=np.array(["JavaScript","HTML","Python","SQL","TypeScript"]) 
 y=np.array([62.3,52.9,51,51,38.5]) 
 plt.bar(x,y,color="#2B6868") #create the bar plot with the color #2B6868
+plt.ylabel('Percentage (%)')  # 添加y轴标签
+plt.title('Developer Usage Percentage by Language')  # 添加标题
 plt.show() #show the bar plot
