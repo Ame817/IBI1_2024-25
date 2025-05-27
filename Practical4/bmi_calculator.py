@@ -1,3 +1,13 @@
+# Pseudocode Planning:
+# 1. Get the user's weight in kilograms (float input)
+# 2. Get the user's height in meters (float input)
+# 3. Calculate BMI using the formula: weight / (height^2)
+# 4. Use conditional statements to categorize BMI:
+#    - If BMI > 30, print "obese"
+#    - If BMI < 18.5, print "underweight"
+#    - Otherwise, print "normal weight"
+# 5. Print the BMI value along with the corresponding category
+
 #1.get the weight(in kg) and height(in m) from the user
 weight=float(input("input your weight(kg)"))
 height=float(input("input your height(m)"))

@@ -17,4 +17,8 @@ X=True
 Y=False
 W=X and Y
 print("X =",X,"Y =",Y,"W =",W)
-#"X= True Y= False W= False"
+# X      Y      W
+# True   True   True
+# True   False  False
+# False  True   False
+# False  False  False
