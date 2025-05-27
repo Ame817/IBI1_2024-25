@@ -9,4 +9,5 @@ def drug_dosage(weight,strength):
         print('ERROR:Sorry, please choose the strength from 120mg/5ml and 250mg/5ml ')
     return(dosage)
 
-print('The volume of paracetamol required is ',drug_dosage(12.0,'120mg/5ml'),'ml') #7.5ml
+result=drug_dosage(12.0,'120mg/5ml')
+print('The volume of paracetamol required is ',result,'ml') #7.5ml
