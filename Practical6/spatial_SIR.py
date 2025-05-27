@@ -13,12 +13,13 @@ population[outbreak[0], outbreak[1]] = 1
 #an infected individual can infect any of its 8 neighbours with infection probability beta
 #infected individual can recover with probability gamma
 
-beta=0.3
-gamma=0.05
+beta=0.3  # Probability that a susceptible neighbor infected by a infected people
+gamma=0.05 # Probability that an infected person recovers
 
 for n in range(0,100):
     infected_location=np.where(population==1) #find the infected people
     x,y=infected_location
+    # Loop over each infected individual to process recovery and infection spread
     for i in range(len(x)):  #i:infected people
         a,b = x[i],y[i]  #for the location of each infected people 
         #randomly decide whether the people will recover with probability=gamma
@@ -26,7 +27,7 @@ for n in range(0,100):
         if effect==1: 
             population[a,b]=2 #if random number effect=1, change the status of this people to recovered
 
-        
+        # Check the 8 neighbors around this infected person
         for dx,dy in [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)]: #the relative position of 8 people around
             na,nb=a+dx,b+dy #find the 8 people next to each infected people (location:[na,nb])
             if 0<=na<=99 and 0<=nb<=99:
