@@ -1,0 +1,7 @@
+length:222 amino acids
+subcellular location: Mitochondrion matrix
+range of identities: 58.1%-100%
+alignment score:
+human&mouse:1097
+mouse&random:-221
+Human&mouse (P04179&P09671) are the most closely related.
